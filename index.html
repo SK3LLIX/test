@@ -22,17 +22,19 @@
         </canvas>
 
         <script>
-            let aleck = new Image();
-            aleck.onload = function() {
-               context.drawImage(aleck, 10, 10);
-            };
-            aleck.src = 'https://sk3llix.github.io/test/assets/images/spritesheets/aleck.png';
+            
             "use strict";
             let canvas;
             let context;
 
             window.onload = init;
 
+            let aleck = new Image();
+            aleck.onload = function() {
+               context.drawImage(aleck, 10, 10, 1000, 1000,);
+            };
+            
+            aleck.src = 'https://sk3llix.github.io/test/assets/images/spritesheets/aleck.png';
             function init(){
                 canvas = document.getElementById('canvas');
                 context = canvas.getContext('2d');
@@ -70,7 +72,7 @@
 
             function draw(){
                 
-               context.drawImage(aleck, 10, 10);
+               context.drawImage(aleck, 10, 10, 1000, 1000,);
             }
             
         </script>
